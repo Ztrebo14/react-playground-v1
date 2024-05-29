@@ -1,0 +1,103 @@
+.sidebar-and-outlet {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    position: relative;
+    margin: 20px;
+}
+
+.sidebar-container {
+    background-color: rgb(124, 176, 255);
+    border-radius: 10px 10px 10px 10px;
+    height: 500px;
+    width: 230px;
+    position: relative;
+    padding: 20px 30px 0 20px;
+    left: -255px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar-container.open {
+    left: 0;
+}
+
+.sidebar-links {
+    margin: 20px 0 20px 10px;
+
+}
+
+.sidebar-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-links a:hover {
+    background-color: yellowgreen;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar-container a {
+    display: flex;
+    flex-direction: row;
+}
+
+.output-route-container {
+    position: relative;
+    background-color: rgb(121, 121, 121);
+    border-radius: 10px 10px 10px 10px;
+    height: 500px;
+    padding: 20px 20px 0 20px;
+    margin-right: 0;
+    margin-left: -240px;
+    transition: margin-left 0.3s ease;
+}
+
+.output-route-container.move {
+    margin-left: 0;
+}
+
+.sqr1 {
+    position: relative;
+    background-color: rgb(119, 119, 255);
+    height: 300px;
+    width: 300px;
+}
+
+.sqr2 {
+    position: absolute;
+    background-color: rgb(117, 219, 117);
+    margin: 0 0 0 30px;
+    height: 50px;
+    width: 50px;
+
+}
+
+.sqr2-1 {
+    position: relative;
+    background-color: rgb(16, 80, 16);
+    margin: 0 0 0 90px;
+    height: 50px;
+    width: 50px;
+}
+
+.sqr2-2 {
+    position: absolute;
+    background-color: rgb(117, 219, 117);
+    margin: 10px 0 0 90px;
+    height: 90px;
+    width: 90px;
+}   

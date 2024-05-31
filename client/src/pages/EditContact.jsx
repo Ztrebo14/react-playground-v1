@@ -3,13 +3,14 @@ import { useParams, Link } from 'react-router-dom'
 import BackButton from '../components/BackButton'
 
 const EditContact = () => {
-  const { contactId } = useParams()
+  const { userId } = useParams()
 
   return (
     <>
       <BackButton/>
       <h2>Editing user contact</h2>
-      { contactId.user }
+      <p>{userId}</p>
+        
     </>
   )
 }

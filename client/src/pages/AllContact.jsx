@@ -6,7 +6,6 @@ import { NavLink, Link } from 'react-router-dom'
 
 
 const AllContact = () => {
-
   const { users } = useContext(ContactContext)
 
   return (
@@ -23,8 +22,8 @@ const AllContact = () => {
               <li>{user.email}</li>
               <li>{user.phoneNum}</li>
               {/* <button type="button" >Edit</button> */}
-              <Link to={`edit-contact/${user.id}`}>Edit</Link>
-              <button type="button" >Delete</button>
+                <Link to={`edit-contact/${user.id}`}>Edit</Link>
+                <button type="button" >Delete</button>
               </ul>
             )) 
           }
